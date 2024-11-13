@@ -10,7 +10,7 @@ from PIL import Image
 from sklearn.model_selection import train_test_split
 
 # Defining parameters
-input_dir = 'D:/Test_programs/ma_project/ObjectDetc/test_images'
+input_dir = '/data'            #Ensure the path as absolute in local execution
 brands = ['godrej', 'panasonic', 'lg', 'voltas', 'bluestar']
 num_classes = len(brands)  # Number of brands
 
@@ -127,6 +127,6 @@ def predict_image(image_path, model, transform, brands):
 
 
 # Example usage of single-image prediction
-image_path = 'D:/Test_programs/ma_project/ObjectDetc/000001.jpg'  # Replace with a test image path
+image_path = '000001.jpg'  # Replace with a test image path
 predicted_brand = predict_image(image_path, model, transform, brands)
 print(f'Predicted brand: {predicted_brand}')

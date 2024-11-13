@@ -1,0 +1,5 @@
+path: D:/Test_programs/ma_project/ObjectDetc/data  # Dataset root directory
+train: images/train  # Training images path
+val: images/val      # Validation images path
+nc: 6  # Number of classes
+names: ['Cassete AC', 'PTAC', 'Split', 'Floor Standing', 'Portable Type', 'Ceiling & floor']
